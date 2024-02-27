@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    transition: backgroud 0.3s linear;
+    color:  black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+body.dark {
+    background-color: #292c35;
+}
+
+body.light{
+    background-color: whitesmoke;
+}
+
+body.dark p, h1, h2,h3,h4, h5 ,h6{
+    color: #fff;
+}
+
+body.light p, h1, h2,h3,h4,h5, h6{
+    color: #111;
+}
+
+
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+} 
+
+.label{
+    background-color: #111;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    height: 26px;
+    width: 50px;
+}
+
+.ball{
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    transition: transform 0.2s linear;
+
+}
+
+.checkbox:checked +  .label .ball {
+    transform: translateX(24px)
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+
+.fa-solid .fa-sun {
+    color: #f39c12;
+}
+
+.image-icons{
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+#main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+}
+
+#orange{
+    position: absolute;
+    bottom: 80%;
+    right: 45%;
+    width: 50px;
+    height: 50px;
+}
+
+#green {
+    position: absolute;
+    bottom: 60%;
+   left: 70%;
+    width: 50px;
+    height: 50px;
+}
+
+#google{
+    position: absolute;
+    bottom: 40%;
+    left: 72%;
+    width: 60px;
+    height: 60px;
+}
+
+#asana{
+    position: absolute;
+    top: 50%;
+    right: 72%;
+    width: 50px;
+    height: 50px;
+}
+
+#wordpress{
+    position: absolute;
+    bottom: 60%;
+    right: 70%;
+    width: 50px;
+    height: 50px;
+}
+
+.hero-image-one{
+    position : relative;
+}
+
+.man-pointing-up{
+    /*position: absolute;
+    top: 50%;
+    left: 50%;*/
+    width:400px;
+    height: 400px;
+}
+
+#eight{
+    position: absolute;
+    bottom: 90%;
+    right: 76%;
+    width: 70px;
+    height: 70px;
+}
+
+.content-image-two {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.chart{
+    position: absolute;
+    top: -10%;
+    left: 55%;
+    width: 500px;
+    height: 500px;
+    z-index: 1;
+}
+
+.three{
+    position: absolute;
+    top: 10%;
+    left: 110%;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+}
+
+#boss{
+    position: absolute;
+    top:20%;
+    left: 70%;
+    transform: translate(-10%, -10%);
+    width: 400px;
+    height: 400px;
+    z-index: 3;
+}
+
+
+
+
