@@ -19,9 +19,6 @@
     <div class = "logo-container">
       <img src="assets/Sauti Logo_Artboard 1 (1).svg" alt="" style="height: 60px;">
     </div>
-    
-
-    <div class="">
 
       <ul class="nav-links sidebar flex">
         <li onclick=hideSidebar()>
@@ -57,7 +54,7 @@
           <a href="#">Contact</a>
         </li>
       </ul>
-    </div>
+    
 
     <div class="nav-icons flex">
       <input type="checkbox" class="checkbox" id="checkbox">
@@ -77,8 +74,8 @@
 
   </nav>
 
-  <div class="hero">
-    <h1>
+  <div class="hero flex column center">
+    <h1 class="hero-text">
       Say Hello To Oscar, Your No-Nonsense <span style="color: #ffd150;"> Content Manager</span>
     </h1>
     <div class="image-icons">
@@ -89,75 +86,96 @@
       <img id="asana" src="assets/download__17_-removebg-preview 1.svg" alt="">
       <img id="wordpress" src="assets/download__15_-removebg-preview 1.svg" alt="">
     </div>
-    <p>Oscar Brings Hollywood-Quality Content To Your Fingertips, Without The Hollywood Price Tag.</p>
+    <p class="hero-explainer">Oscar Brings Hollywood-Quality Content To Your Fingertips, Without The Hollywood Price Tag.</p>
     <div>
-      <button type="button">Hire Oscar</button>
-      <button type="button">Schedule a demo</button>
+      <button class="btn primary" type="button">Hire Oscar</button>
+      <button class="btn secondary" type="button">Schedule a demo</button>
     </div>
-    <p>Oscar will create on-brand videos, write attention grabbing SEO blogs, generate your marketing voice-overs, and
+    <p class="hero-explainer">Oscar will create on-brand videos, write attention grabbing SEO blogs, generate your marketing voice-overs, and
       much more
       in under a minute- because who's got time to wait when you've got ideas ready to roll?
     </p>
   </div>
 
   <div class="hero-two">
-    <div>
-      <h2> Oscar is not a typical AI agent;
-        he's a <span style="color: #ffd150;"> trusted member of your team</span>
-      </h2>
+    <div class="hero-block flex">
+      <div class="hero-text-block">
+        <h2> Oscar is not a typical AI agent;
+          he's a <span style="color: #ffd150;"> trusted member of your team</span>
+        </h2>
 
-      <p>
-        Oscar stands out from typical AI tools; he's designed to function like human employee , improving every day as
-        he learns
-        more about your company.Communicate with Oscar effortlessly through Slack or Asana and easily assign tasks to
-        him as you
-        would with any other team member.
-      </p>
-    </div>
-    <div class="hero-image-one">
-      <img class="man-pointing-up" src="assets/man-pointing-up.svg" alt="">
-      <img id="eight" src="assets/8.svg">
-    </div>
-
-
-
-    <div>
-      <h2> Always <span style="color: #ffd150;"> On-brand</span></h2>
-      <p> Oscar crafts consistently on-brand content by leveraging your company data. He understands ypur brand tone,
-        target
-        audience , and guidelines ensuring every piece of content he genarates is tailored and never generic
-      </p>
-    </div>
-    <div class="hero-image-two">
-      <img src="assets/design.svg" alt="">
+        <p>
+          Oscar stands out from typical AI tools; he's designed to function like human employee , improving every day as
+          he learns
+          more about your company.Communicate with Oscar effortlessly through Slack or Asana and easily assign tasks to
+          him as you
+          would with any other team member.
+        </p>
+      </div>
+      <div class="hero-image-one">
+        <img class="man-pointing-up" src="assets/man-pointing-up.svg" alt="">
+        <img id="eight" src="assets/8.svg">
+      </div>
     </div>
 
-    <button type="button"> Hire Oscar</button>
+
+    <div class="hero-block flex reversed">
+      <div>
+        <h2> Always <span style="color: #ffd150;"> On-brand</span></h2>
+        <p> Oscar crafts consistently on-brand content by leveraging your company data. He understands ypur brand tone,
+          target
+          audience , and guidelines ensuring every piece of content he genarates is tailored and never generic
+        </p>
+      </div>
+      <div class="hero-image-two">
+        <img src="assets/design.svg" alt="">
+      </div>
+    </div>
+
+    <div class="flex center">
+      <button class="btn primary" type="button"> Hire Oscar</button>
+    </div>
+    
   </div>
 
   <div class="content-section">
-    <h2>Content <span style="color: #ffd150;"> Ideation </span> and <span style="color: #ffd150;">Planning</span></h2>
-    <p> Need fresh content ideas? No problem Oscar delivers a constant stream of ideas for your social media, blogs and
-      more
-      His expertise goes beyond content creation , he's a master strategist. Oscar helps you plan your content with a
-      customized
-      content calendar to keep you on track
-    </p>
-    <div>
-      <img src="assets/composition.svg"></img>
+    <div class="hero-block flex">
+        <div class="container">
+          <h2>Content 
+          <span style="color: #ffd150;"> Ideation </span> and <span style="color: #ffd150;">Planning</span>
+        </h2>
+        <p> 
+          Need fresh content ideas? No problem Oscar delivers a constant stream of ideas for your social media, blogs and
+          more
+          His expertise goes beyond content creation , he's a master strategist. Oscar helps you plan your content with a
+          customized
+          content calendar to keep you on track
+        </p>
+        </div>
+
+        <div>
+          <img src="assets/composition.svg"></img>
+        </div>
     </div>
-    <div>
-      <h2> <span style="color: #ffd150;"> Multi-format</span> Content Generation</h2>
-      <p> Whether you need videos , blogs, product shoots or marketing voiceovers , Oscar's got you covered-
-        all from a user-friendly dashboard. Just tell Oscar what you need , and he'll make it happen in a snap!
-      </p>
+    
+    <div class="hero-block flex reversed">
+      <div>
+        <h2> <span style="color: #ffd150;"> Multi-format</span> Content Generation</h2>
+        <p> Whether you need videos , blogs, product shoots or marketing voiceovers , Oscar's got you covered-
+          all from a user-friendly dashboard. Just tell Oscar what you need , and he'll make it happen in a snap!
+        </p>
+      </div>
+      <div class="content-image-two">
+        <img id="boss" src="assets/boss.svg" alt="">
+        <img class="three" src="assets/3.svg" alt="">
+        <img class="chart" src="assets/chart.svg" alt="">
+      </div>
     </div>
-    <div class="content-image-two">
-      <img id="boss" src="assets/boss.svg" alt="">
-      <img class="three" src="assets/3.svg" alt="">
-      <img class="chart" src="assets/chart.svg" alt="">
+    
+    <div class="flex center">
+      <button class="btn primary" type="button"> Hire Oscar</button>
     </div>
-    <button type="button"> Hire Oscar</button>
+    
   </div>
 
   <div class="container">
@@ -174,7 +192,7 @@
       <p>Oscar is your effective content manager. He will create your videos , product images ,SEO Blogs and more,
         better than fortune 500 companies all without the need to spend an arm and a leg.
       </p>
-      <button type="button"> Hire Oscar</button>
+      <button class="btn" type="button"> Hire Oscar</button>
     </div>
 
   </div>
@@ -182,11 +200,11 @@
   <div class="">
     <h1> SAVE BIG ON COPYWRITERS ,VOICE ACTORS AND CAMERA CREWS BY HIRING OSCAR</h1>
     <div>
-      <button type="button"> Hire Oscar</button>
-      <button type="button">Schedule a Demo</button>
+      <button class="btn" type="button"> Hire Oscar</button>
+      <button class="btn" type="button">Schedule a Demo</button>
     </div>
     <div>
-      <button><i class="fa-solid fa-arrow-up"></i></button>
+      <button class="btn"><i class="fa-solid fa-arrow-up"></i></button>
     </div>
   </div>
 
