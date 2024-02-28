@@ -18,7 +18,7 @@ body.dark {
 }
 
 body.light{
-    background-color: #e8eaff;
+    background-color: #bbbed8;
 }
 
 body.dark p, 
@@ -245,6 +245,7 @@ nav {
   
   .nav-icons {
     gap: 30px;
+    align-items: center;
   }
   
   .checkbox {
@@ -262,13 +263,12 @@ nav {
 
   .sidebar {
     display: none;
-    padding-top: 20px;
     position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
     width: 250px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     color: white;
@@ -341,11 +341,11 @@ nav {
   }
 
   .primary {
-    background-color: #ffd150;
+    background-image: linear-gradient(to bottom, #FFD150, #d49e08);
   }
   
 .secondary {
-    background-color: #535252;
+    background-image: linear-gradient(to bottom, #777676, #3d3745);
     color: whitesmoke;
 }
 
@@ -374,11 +374,12 @@ flex-direction: row-reverse;
 .card-container {
     padding-top: 250px;
     margin-bottom: 80px;
+    color: whitesmoke;
 }
 
 .card-holder {
     position: relative;
-    background-color: #bbb0b0;
+    background-color: #4d4949;
     max-width: 800px;
     z-index: 0;
     padding: 0 36px 20px 36px;
@@ -419,6 +420,7 @@ flex-direction: row-reverse;
 .btn-container {
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 20px;
 }
   
 .final-btns {
