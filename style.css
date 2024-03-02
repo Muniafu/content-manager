@@ -170,7 +170,7 @@ body.light h6{
     position: absolute;
     top: -10%;
     left: 55%;
-    width: 500px;
+    width: 400px;
     height: 500px;
     z-index: 1;
 }
@@ -178,7 +178,7 @@ body.light h6{
 .three{
     position: absolute;
     top: 10%;
-    left: 110%;
+    left: 80%;
     width: 100px;
     height: 100px;
     z-index: 2;
@@ -213,6 +213,7 @@ body.light h6{
 /* MAIN STYLES ------------------ */
 
 nav {
+    width: 100vw;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
@@ -244,7 +245,7 @@ nav {
   }
   
   .nav-icons {
-    gap: 30px;
+    gap: 20px;
     align-items: center;
   }
   
@@ -371,6 +372,12 @@ max-width: 40%;
 flex-direction: row-reverse;
 }
 
+.collab-img, .boss,
+.on-brand-img, .man-pointing-up {
+  width: 80vw;
+  max-width: 350px;
+}
+
 .card-container {
     padding-top: 250px;
     margin-bottom: 80px;
@@ -424,7 +431,9 @@ flex-direction: row-reverse;
 }
   
 .final-btns {
-    flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
 }
   
 .rounded-btn-holder {
