@@ -14,7 +14,7 @@ body{
 }
 
 body.dark {
-    background-color: #292c35;
+    background-color: #3d3d3d;
 }
 
 body.light{
@@ -217,7 +217,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #3d3d3d;
     color: white;
   }
   
@@ -451,7 +451,7 @@ flex-direction: row-reverse;
 
 
 footer {
-    background-color: #292c35;
+    background-color: #3d3d3d;
     color: whitesmoke;
     padding: 40px;
 }
