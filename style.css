@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html { 
+  scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     transition: backgroud 0.3s linear;
@@ -431,9 +435,7 @@ flex-direction: row-reverse;
 }
   
 .final-btns {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
+width: 100%;
 }
   
 .rounded-btn-holder {
@@ -445,6 +447,8 @@ flex-direction: row-reverse;
     height: 40px;
     border-radius: 50%;
     margin: 0 30px;
+    font-size: 20px;
+    color: whitesmoke;
     border: none;
     cursor: pointer;
 }
@@ -475,6 +479,12 @@ footer {
   .footer-wrapper > div {
     flex: 1 1 200px; 
     margin-right: 20px; 
+  }
+
+  .footer-wrapper div p a { 
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 14px;
   }
   
   /* Responsive styles */
