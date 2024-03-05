@@ -1,4 +1,4 @@
-const checkbox = document.getElementById("checkbox");
+/*const checkbox = document.getElementById("checkbox");
 
 checkbox.checked = true;
 
@@ -8,7 +8,7 @@ if (checkbox.checked) {
 
 checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark");
-});
+});*/
 
 function showSidebar() {
     const sidebar = document.querySelector('.sidebar')

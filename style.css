@@ -9,7 +9,8 @@ html {
 body{
     margin: 0;
     transition: backgroud 0.3s linear;
-    color:  black;
+    color:  white;
+    background-color: #3d3d3d;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -17,7 +18,7 @@ body{
     overflow-x: hidden;
 }
 
-body.dark {
+/*body.dark {
     background-color: #3d3d3d;
 }
 
@@ -86,7 +87,7 @@ body.light h6{
 
 .fa-solid .fa-sun {
     color: #f39c12;
-}
+}*/
 
 .image-icons{
     position: relative;
@@ -231,6 +232,8 @@ nav {
   /* Style the navigation links */
   .nav-links {
     list-style: none;
+    justify-content: center;
+    align-items: center;
   }
   
   .nav-links li {
@@ -248,7 +251,7 @@ nav {
     transition: ease-in 0.5s;
   }
   
-  .nav-icons {
+  /*.nav-icons {
     gap: 20px;
     align-items: center;
   }
@@ -264,7 +267,7 @@ nav {
   
   .label i {
     margin-right: 10px;
-  }
+  }*/
 
   .sidebar {
     display: none;
@@ -451,6 +454,15 @@ width: 100%;
     color: whitesmoke;
     border: none;
     cursor: pointer;
+}
+
+@media screen and(max-width: 500px) {
+  .btn .secondary{
+    width: 200px;
+  }
+  .btn-container{
+  width: 100%;
+  }
 }
 
 
