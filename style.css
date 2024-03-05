@@ -145,24 +145,17 @@ body.light h6{
 }
 
 .hero-image-one{
-    position : relative;
+   position: relative;
+    
 }
-
-.man-pointing-up{
-    /*position: absolute;
-    top: 50%;
-    left: 50%;*/
-    width:400px;
-    height: 400px;
-}
-
-#eight{
+  #eight {
     position: absolute;
-    bottom: 90%;
-    right: 76%;
+    bottom: 95%;
+    right: 27%;
     width: 70px;
     height: 70px;
 }
+
 
 .content-image-two {
     position: relative;
@@ -378,6 +371,15 @@ max-width: 40%;
 }
 }
 
+.hero-image-two{
+  margin-right: 100px;
+}
+@media (max-width: 700px){
+  .hero-image-two{
+    margin-right: 0;
+  }
+}
+
 .reversed {
 flex-direction: row-reverse;
 }
@@ -386,6 +388,17 @@ flex-direction: row-reverse;
 .on-brand-img, .man-pointing-up {
   width: 80vw;
   max-width: 350px;
+}
+
+.collab-img{
+  margin-left: 150px;
+}
+
+@media (max-width: 700px) {
+  .collab-img{
+    margin-left: 0px;
+  }
+  
 }
 
 .card-container {
