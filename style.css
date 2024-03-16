@@ -10,7 +10,7 @@ body{
     margin: 0;
     transition: backgroud 0.3s linear;
     color:  white;
-    background-color: #3d3d3d;
+    background-color: #212121;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -18,81 +18,10 @@ body{
     overflow-x: hidden;
 }
 
-/*body.dark {
-    background-color: #3d3d3d;
-}
-
-body.light{
-    background-color: #bbbed8;
-}
-
-body.dark p, 
-body.dark h1, 
-body.dark h2,
-body.dark h3,
-body.dark h4, 
-body.dark h5 ,
-body.dark h6{
-    color: #fff;
-}
-
-body.light p, 
-body.light h1, 
-body.light h2,
-body.light h3,
-body.light h4,
-body.light h5, 
-body.light h6{
-    color: #111;
-}
-
-
-
-.checkbox {
-    opacity: 0;
-    position: absolute;
-} 
-
-.label{
-    background-color: #111;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 50px;
-    position: relative;
-    padding: 5px;
-    height: 26px;
-    width: 50px;
-}
-
-.ball{
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 22px;
-    height: 22px;
-    transition: transform 0.2s linear;
-
-}
-
-.checkbox:checked +  .label .ball {
-    transform: translateX(24px)
-}
-
-.fa-moon{
-    color: #f1c40f;
-}
-
-.fa-solid .fa-sun {
-    color: #f39c12;
-}*/
-
 .image-icons{
     position: relative;
-    width: 500px;
-    height: 500px;
+    width:500px;
+    height: 350px;
 }
 
 #main {
@@ -106,7 +35,7 @@ body.light h6{
 
 #orange{
     position: absolute;
-    bottom: 80%;
+    bottom: 82%;
     right: 45%;
     width: 50px;
     height: 50px;
@@ -114,7 +43,7 @@ body.light h6{
 
 #green {
     position: absolute;
-    bottom: 60%;
+    bottom: 42%;
    left: 70%;
     width: 50px;
     height: 50px;
@@ -122,74 +51,70 @@ body.light h6{
 
 #google{
     position: absolute;
-    bottom: 40%;
-    left: 72%;
+    bottom: 13%;
+    left: 71%;
     width: 60px;
     height: 60px;
 }
 
 #asana{
     position: absolute;
-    top: 50%;
-    right: 72%;
+    top: 71%;
+    right: 71%;
     width: 50px;
     height: 50px;
 }
 
 #wordpress{
     position: absolute;
-    bottom: 60%;
-    right: 70%;
+    bottom: 43%;
+    right: 71%;
     width: 50px;
     height: 50px;
+}
+
+h1, h2, h3, h4, h6{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+h5{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px; 
+}
+
+ p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .hero-image-one{
    position: relative;
     
 }
-  #eight {
+ /* #eight {
     position: absolute;
     bottom: 95%;
     right: 27%;
     width: 70px;
     height: 70px;
-}
+}*/
 
 
 .content-image-two {
     position: relative;
     width: 500px;
-    height: 500px;
-    right: 300px;
+
 }
 
-.chart{
-    position: absolute;
-    top: -10%;
-    left: 55%;
-    width: 400px;
-    height: 500px;
-    z-index: 1;
-}
-
-.three{
-    position: absolute;
-    top: 10%;
-    left: 80%;
-    width: 100px;
-    height: 100px;
-    z-index: 2;
-}
-
-#boss{
-    position: absolute;
-    top:20%;
-    left: 70%;
-    transform: translate(-10%, -10%);
-    width: 400px;
-    height: 400px;
-    z-index: 3;
+.boss{
+   position: relative;
+    top:5%;
+    right: 5%;
+   /* transform: translate(-10%, -10%);*/
+   
 }
 
 /* UTILITY CLASSES ---------------------- */
@@ -332,11 +257,16 @@ nav {
   left: 85px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.frame-child1{
+  width: 60px ;
+  height: 60px ;
+}
 .frame-child1,
 .frame-child2,
 .frame-child3,
 .frame-child4 {
-  top: 35px;
+  top: 8px;
   left: 220px;
 }
 .frame-child2,
@@ -375,13 +305,17 @@ nav {
   .hero-text {
     text-align: center;
     margin: 20px auto;
-    max-width: 32ch;
+    max-width: 40ch;
+    font-weight: 600;
+
   }
 
   .hero-explainer {
     text-align: center;
-    margin: 20px auto;
+    margin: 10px auto;
     max-width: 900px;
+    font-weight: 400px;
+    font-size: 20px;
   }
 
   .btn {
@@ -392,6 +326,7 @@ nav {
     margin: 20px;
     border-radius: 12px;
     font-weight: bold;
+    font-size: 16px;
     border: none;
   }
 
@@ -404,7 +339,7 @@ nav {
   }
   
 .secondary {
-    background-image: linear-gradient(to bottom, #777676, #3d3745);
+    background-image: linear-gradient(to bottom, #777676, #3d3d3d);
     color: whitesmoke;
 }
 
@@ -464,7 +399,7 @@ flex-direction: row-reverse;
 
 .card-holder {
     position: relative;
-    background-color: #4d4949;
+    background-color: #3d3d3d;
     max-width: 800px;
     z-index: 0;
     padding: 0 36px 20px 36px;
@@ -483,23 +418,29 @@ flex-direction: row-reverse;
 }
 
 .descriptor {
-    max-width: 36ch;
+    max-width: 38ch;
     text-align: center;
     margin-bottom: 60px;
 }
 
 .final-sale {
-    background-color: #ffd150;
+    background-color: rgba(255, 209, 80, 0.9);
+    box-shadow: 0px 39px 56px -36px rgba(255, 255, 255, 0.5)
+    inset, 0px 7px 11px -4px #fffafa inset,
+    0px -82px 68px -64px rgba(96, 68, 144, 0.3) inset,
+    0px 98px 100px -48px rgba(202, 172, 255, 0.3) inset,
+    0px 98px 100px -48px rgba(202, 172, 255, 0.3) inset, 0px 4px 18px rgba(154, 146, 210, 0.3) inset;
+    backdrop-filter: blur(100px);
     color: #111;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
 .save-text {
-    padding: 40px;
+    padding: 25px;
     color: #111;
     text-align: center;
-    max-width: 56ch;
+    max-width: 60ch;
 }
 
 .btn-container {
