@@ -462,6 +462,8 @@ width: 100%;
   
 .rounded-btn-holder {
     margin-left: auto; 
+    display: flex;
+    flex-direction: column;
 }
 
 .secondary.rounded {
