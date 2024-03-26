@@ -40,7 +40,7 @@ nav {
   justify-content: space-between;
   align-items: center;
  /* padding: 10px 20px;*/
- padding: 25px 10%;
+ padding:5px 5%;
   background-color: #3d3d3d;
   color: white;
 }
@@ -49,13 +49,25 @@ nav {
 
 
 /* Style the navigation links */
+
+.navbar-links{
+  background-color: #212121;
+ width: 700px;
+ height: 50px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 15px;
+}
+
 .nav-links {
   list-style: none;
   display: flex ;
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 35%;
+  left: 22%;
+  
   /*margin-right: 75px;*/
 }
 
@@ -67,7 +79,7 @@ nav {
   color: white;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .nav-links a:hover {
@@ -132,7 +144,7 @@ nav {
  
   p{
    font-weight: 500;
-   font-size: 22px;
+   font-size: 18px;
   }
 
   .hero-text {
@@ -149,17 +161,17 @@ nav {
     }
 
   h1{
-      font-size: 34px;
+      font-size: 32px;
       font-weight: 500;
   }
 
   h2{
-    font-size: 34px;
+    font-size: 26px;
     font-weight: 600;
   }
  
   h3{
-      font-size: 24px;
+      font-size: 20px;
       display: flex;
       text-align: center;
       margin-top: 80px;
@@ -187,7 +199,9 @@ nav {
     }
   
     .primary {
-      background-image: linear-gradient(to bottom, #FFD150, #d49e08);
+      /*background-image: linear-gradient(to bottom, #FFD150, #d49e08);*/
+      background: linear-gradient(180deg, #ffd150, rgba(255, 209, 80, 0.49) 99.99%, rgba(255, 209, 80, 0));
+      box-shadow: -7px -7px 10px rgba(255, 255, 255, 0.25), 10px 10px 12px rgba(0, 0, 0, 0.25);
     }
     
   .secondary {
@@ -256,7 +270,7 @@ flex: 1 ;
 display: flex;
 justify-content: center;
 align-items: center; 
-padding: 0 20px; 
+padding: 0px; 
 }
 
 .image-two{
@@ -314,11 +328,30 @@ padding: 20px;
 }
 
 .content-image-one{
+position: relative;
 flex: 1; 
 display: flex;
 justify-content: center; 
 align-items: center; 
 padding: 0 20px; 
+}
+
+.boss{
+  position: relative;
+  top: 5%;
+  left: 20%;
+}
+
+.collab-img{
+  position: relative;
+  top: 2%;
+  right: 20%;
+}
+
+.man-one{
+  position: relative;
+  top: 2%;
+  right: 10%;
 }
 
 .image-five{
@@ -509,7 +542,7 @@ footer {
 
 .hero-block-one > * {
   flex: 1 1 80%; 
-  max-width: 45%;
+  max-width: 55%;
   }
 
 .hero-block-two > * {
@@ -524,7 +557,7 @@ footer {
 
 .content-one > * {
   flex: 1 1 75%; 
-  max-width: 45%;
+  max-width: 55%;
   }
 .content-two > * {
   flex: 1 1 75%; 
