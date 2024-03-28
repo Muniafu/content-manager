@@ -385,7 +385,8 @@ padding: 0 20px;
   .boss{
     position: relative;
     top: 5%;
-    left: -15%;
+    /*left: -15%;*/
+    left: 6%;
   }
 }
 
@@ -395,6 +396,13 @@ padding: 0 20px;
   right: 10%;
 }
 
+
+@media ( max-width:768px){
+  .collab-img{
+    width: 320px;
+    height: auto;
+  }
+}
 .man-one{
   position: relative;
   top: 2%;
