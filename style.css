@@ -231,8 +231,8 @@ header{
   .btn {
       padding: 10px 20px;
       width: 200px;
-      width: 20vw;
-      min-width: 200px;
+      /*width: 20vw;
+      min-width: 200px;*/
       margin: 20px;
       border-radius: 12px;
       font-weight: bold;
@@ -258,6 +258,17 @@ header{
       display: flex;
       justify-content: center;
       align-items: center;
+      
+  }
+
+  .oscar-w-img{
+    width: 400px;
+  }
+
+  @media(max-width:500px){
+    .oscar-w-img{
+      width: 300px;
+    }
   }
 
   .block-text{
@@ -318,6 +329,12 @@ align-items: center;
 padding: 0px; 
 }
 
+@media (max-width: 450px){
+  .man-one{
+    width: 320px;
+  }
+}
+
 .image-two{
 max-width: 100%;
 height: auto;
@@ -337,6 +354,12 @@ display: flex;
 justify-content: center; 
 align-items: center; 
 padding: 0 20px; 
+}
+
+@media (max-width: 450px){
+  .on-brand-img{
+    width: 320px;
+  }
 }
 
 .image-three{
@@ -401,6 +424,7 @@ padding: 0 20px;
     position: relative;
     top: 5%;
     left: -15%;
+    width: 300px;
   }
 }
 
@@ -408,6 +432,7 @@ padding: 0 20px;
   position: relative;
   top: 2%;
   right: 10%;
+  width: 500px;
 }
 
 
@@ -473,7 +498,7 @@ height: auto;
 .card-container .image-icons {
   z-index: 10;
   position: absolute;
-  top: -280px;
+  top: -240px;
 }
 
 .oscar {
@@ -512,7 +537,7 @@ height: auto;
 
 @media screen and(max-width: 500px) {
   .btn .secondary{
-    width: 200px;
+    width: 150px;
   }
   .btn-container{
   width: 100%;
@@ -532,13 +557,13 @@ width: 100%;
 
 @media (max-width: 768px){
 .final-btns{
-  display: block;
+  width: 150px;
 }
 
 }
 
 .rounded-btn-holder {
-  margin-left: auto; 
+  margin-right: 5px; 
 }
 
 .secondary.rounded {
@@ -754,7 +779,19 @@ max-width: 100%;
 } 
 
 
+@media (max-width: 500px){
+  h2{
+    font-size: 25px;
+  }
 
+  p{
+    font-size: 20px;
+   }
+
+   h1{
+    font-size: 28px
+   }
+}
 
 
 
