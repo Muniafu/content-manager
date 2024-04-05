@@ -14,22 +14,56 @@
   <header>
     <div class="navbar">
          <img src="assets/Sauti Logo_Artboard 1 (1).svg" alt="Sauti's Logo" height="60px">
+
         <ul class="links">
-          <li style="display: flex; align-items: center; justify-content: center;"> <a href="#"> Digital Workers </a> 
+          <li style="display: flex; align-items: center; justify-content: center;"> 
+            <a href="#"> Digital Workers </a> 
+            <ul class="dropdown" style="margin-top: 300px;">
+              <li><a href="#">Kelly - The Customer Service Rep</a></li>
+              <li><a href="#">Andy - The Sales Rep</a></li>
+              <li><a href="#">Nick - The Web Developer</a></li>
+              <li><a href="#">Karen - The Marketing Manager</a></li>
+              <li><a href="#">Jim - The Lawyer</a></li>
+              <li><a href="#">Erin - The Social Media Manager</a></li>
+              <li><a href="#">Angela - The Financial Manager</a></li>
+              <li><a href="#"> Toby -The Human Resource Manager</a></li>
+              <li><a href="#">Pam - The Graphics Designer</a></li>
+              <li><a href="#">Mike - The Product Manager</a></li>
+          </ul>
             <img class="angle" src="assets/expand_more_white_24dp.svg"> 
           </li>
           <li>
             <a href="#"> Pricing </a>
           </li>
-          <li  style="display: flex; align-items: center; justify-content: center;">
-            <a href="#"> Use Cases </a> 
+           <li style="display: flex; align-items: center; justify-content: center;">
+            <a href="#">Use Cases</a>
+            <ul class="dropdown">
+                <li><a href="#">Soloprenuers</a></li>
+                <li><a href="#">Freelancers</a></li>
+                <li><a href="#">Enterprise</a></li>
+            </ul>
             <img class="angle" src="assets/expand_more_white_24dp.svg">
-           </li>
+            </li>
           <li style="display: flex; align-items: center; justify-content: center;">
             <a href="#">Resources  </a> 
+            <ul class="dropdown" style="margin-top: 150px;">
+              <li><a href="#">E-book</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">100 AI Tools</a></li>
+              <li><a href="#">ChatGPT Cheat Sheet</a></li>
+          </ul>
             <img class="angle" src="assets/expand_more_white_24dp.svg"></li>
           <li style="display: flex; align-items: center; justify-content: center;">
             <a href="#">Company </a>
+            <ul class="dropdown" style="margin-top: 180px;">
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">MasterPlan</a></li>
+              <li><a href="#">Investors</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">About Us</a></li>
+          </ul>
              <img class="angle" src="assets/expand_more_white_24dp.svg"> 
              </li>
         </ul>
@@ -63,12 +97,12 @@
         </div>
     </div>
    <div class="hero-text">
-    <p class="hero-explainer">Oscar Brings Hollywood-Quality Content To Your Fingertips,
+    <p class="hero-explainer">Oscar Brings Hollywood-Quality Content Creation To Your Fingertips,
       Without The Hollywood Price Tag.</p>
     </div>
     <div class="first-btns flex center">
       <button class="btn primary" type="button">Hire Oscar</button>
-      <button class="btn secondary" type="button">Schedule a demo</button>
+      <button class="btn secondary" type="button"><a href="https://calendly.com/sauti/30min">Schedule a demo</a></button>
     </div>
     <div class="hero-text">
         <p >
@@ -82,7 +116,7 @@
        <div class="hero-block-one flex">
            <div class="block-text">
             <h2>
-              Oscar isn't your typical AI agent;
+              Oscar is not your typical AI agent;
               he's a <span style="color: #ffd150;"> trusted member of your team</span>
             </h2>
             <p>
@@ -124,7 +158,7 @@
 
         <div class="hero-block-three flex ">
             <div class="block-text">
-                <h2>
+                <h2> Content
                   <span style="color: #ffd150;"> Ideation </span> and <span style="color: #ffd150;">Planning</span>
                 </h2>
                 <p>
@@ -158,8 +192,6 @@
         <div class="content-img-one" >
           <img class="boss" src="assets/Group 60.png" 
           alt="Man presenting multi-format ideas on a chart, showcasing Sauti's versatile content solutions">
-          <!--<img class="boss" src="https://www.simpleimageresizer.com/_uploads/photos/54569df9/Group_60_320x286.png"
-          alt="Man presenting multi-format ideas on a chart, showcasing Sauti's versatile content solutions">-->
         </div>
       </div>
       <div class="flex center" >
@@ -191,18 +223,18 @@
       <div class="final-sale flex column">
         <div class="banner flex center">
           <h2 class="save-text">
-            SAVE BIG ON COPYWRITERS, VOICE ACTORS, AND CAMERA CREWS BY HIRING OSCAR! HIRE OSCAR NOW.
+            SAVE BIG ON COPYWRITERS, VOICE ACTORS, AND CAMERA CREWS BY HIRING OSCAR! 
           </h2>
         </div>
         
-        <div class="btn-container flex center">
+        <div class="btn-container flex ">
           <div class="final-btns flex center">
-            <button class="btn secondary" type="button"> Hire Oscar</button>
-            <button class="btn secondary" type="button">Schedule a Demo</button>
+            <button class="btn secondary" id="btn-sl" type="button"><a href="#"> Hire Oscar Now</a> </button>
+            <button class="btn secondary" id="btn-l" type="button"><a href="https://calendly.com/sauti/30min">Schedule a Demo</a></button>
           </div>
-          <div class="rounded-btn-holder flex center column">
-            <button class="secondary rounded" id="backToTopBtn">↑</button>
-            <p style="font-size: 16px; font-weight:600 ;">Back To Top</p>
+          <div class="rounded-btn-holder flex column">
+            <button class="secondary rounded" id="backToTopBtn"><a href="#"> ↑</a></button>
+            <p style="font-size: 15px; font-weight:600 ;">Back To Top</p>
           </div>
         </div>
          
@@ -212,17 +244,17 @@
         <div class="footer-wrapper flex">
           <div class="flex column sign-off">
             <img src="assets/Sauti Logo_Artboard 1 (1).svg" style="height: 60px;" alt="Sauti-logo">
-            <p style="font-size: 15px;"  >Save up to $150,000 in labour costs by hiring Sauti's digital workers</p>
+            <p style="font-size: 15px;"  >Save up to $150,000 in labour costs by hiring Sauti's digital workers .</p>
     
             <div class="socials flex">
-              <!--<i class="fa-brands fa-square-whatsapp" style="color: #06ef5f;"></i>
-              <i class="fa-brands fa-facebook" style="color: #0781f2;"></i>
-              <i class="fa-brands fa-square-instagram" style="color: #fa27c2;"></i>
-              <i class="fa-brands fa-linkedin" style="color: #047ef1;"></i>-->
-              <img class="" src="assets/Whatsapp.png" alt="">
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-brands fa-facebook" style="color: #ffd150;"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <!--<img class="" src="assets/Whatsapp.png" alt="">
               <img class="" src="assets/Facebook.png" alt="">
               <img class="" src="assets/Instagram.svg" alt="">
-              <img class="" src="assets/Linkedin.png" alt="">
+              <img class="" src="assets/Linkedin.png" alt="">-->
             </div>
             
           </div>
@@ -235,12 +267,12 @@
         
           </div>
           <div>
-            <h5>Reasources</h5>
-            <p><a href="#">Ebook</a></p>
+            <h5>Resources</h5>
+            <p><a href="https://drive.google.com/file/d/1XYAlqHEoPHPw0iADOrRt3wru33VkYrQY/view?usp=drive_link">Ebook</a></p>
             <p><a href="#">Help Center</a></p>
             <p><a href="#">Blog</a></p>
-            <p><a href="#">100 AI Tools</a></p>
-            <p><a href="#">ChatGPT Cheat Sheet</a></p>
+            <p><a href="https://drive.google.com/file/d/1XYAlqHEoPHPw0iADOrRt3wru33VkYrQY/view?usp=drive_link">100 AI Tools</a></p>
+            <p><a href="https://drive.google.com/file/d/1XYAlqHEoPHPw0iADOrRt3wru33VkYrQY/view?usp=drive_link">ChatGPT Cheat Sheet</a></p>
           </div>
           <div>
             <h5>Company</h5>
@@ -260,7 +292,7 @@
         </div>
         
         <div class="copyright-call flex center">
-          <p>Made with <i class="fa-solid fa-heart" style="color: #940000;"> </i> remotely by the Sauti Team.</p>
+          <p style="font-size: 16px;">Made with <i class="fa-solid fa-heart" style="color: #940000;"> </i> remotely by the Sauti Team.</p>
         </div>
     
       </footer>
