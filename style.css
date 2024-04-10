@@ -142,10 +142,11 @@ ul li ul.dropdown li {
 ul li ul.dropdown {
   width: fit-content;
   background: #212121;
-  position: absolute;
+  position: absolute;                          
   z-index: 999;
   display: none;
   padding-left: 10px;
+  transition-delay: 500ms;
 }
 
 ul li:hover ul.dropdown{
@@ -414,7 +415,7 @@ align-items: center;
 padding: 0 20px; 
 }
   .on-brand-img{
-    width: 100%;
+    width: 400px;
     height: auto;
   }
 
@@ -479,7 +480,7 @@ padding: 0 20px;
  /* top: 2%;
   right: 10%;
   width: 500px;*/
-  width: 100%;
+  width: 400px;
   height: auto;
 }
 
