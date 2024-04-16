@@ -129,6 +129,21 @@ header{
   width: 15px;
  }
 
+ .titled{
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+
+
+ .ellipse-img{
+  width: 20px;
+  height: 20px;
+ }
+
  /* DROPDOWN */
 
  .dropdown{
@@ -137,20 +152,25 @@ header{
 
 ul li ul.dropdown li {
   display: block;
+  border-color: #ffd150;
 }
 
 ul li ul.dropdown {
-  width: fit-content;
-  background: #212121;
+  width: max-content;
+  background-color: #3d3d3d;
+  border: 1px solid;
+  border-color: #ffd150;
+  border-radius: 10px;
   position: absolute;                          
   z-index: 999;
   display: none;
   padding-left: 10px;
-  transition-delay: 500ms;
+  /*transition-delay: 500ms;*/
 }
 
-ul li:hover ul.dropdown{
-  display: block;
+hr{
+  color: black;
+  background-color: black;
 }
 
 /* DROPDOWN MENU */
