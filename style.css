@@ -625,7 +625,7 @@ height: auto;
 .btn-container {
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 20px;
+
 }
 
 
@@ -692,6 +692,12 @@ width: 100%;
 .btn-container{
 width: 100%;
 }
+}
+
+.btn_container_p{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
 }
 
 

@@ -56,5 +56,5 @@ const angleElem = document.getElementById("expand_less")
     dropdownMenu.style.display = "none";
 
     // Show the expand more image
-    angleImages.style.display = "block";
+    //angleImages.style.display = "block";
 });
