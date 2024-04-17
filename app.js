@@ -27,6 +27,19 @@ document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
 
 
+const angleOne = document.getElementById("angle-one")
+var dropdownMenu = document.getElementById('dropdownMenu');
+
+  // Add click event listener to the image
+  angleOne.onclick = function() {
+    // Toggle the display property
+    if (dropdownMenu.style.display === "none" || dropdownMenu.style.display === "") {
+        dropdownMenu.style.display = "block";
+    } else {
+        dropdownMenu.style.display = "none";
+    }
+};
+
 // Get all elements with the class name 'angle'
 var angleImages = document.querySelectorAll('.angle');
 
@@ -39,8 +52,12 @@ angleImages.forEach(function(image) {
         // Toggle the display property of the dropdown menu
         if (dropdownMenu.style.display === "none" || dropdownMenu.style.display === "") {
             dropdownMenu.style.display = "block";
+            // Add rotation class
+            image.classList.add('rotate180');
         } else {
             dropdownMenu.style.display = "none";
+            // Remove rotation class
+            image.classList.remove('rotate180');
         }
     });
 });
@@ -58,3 +75,4 @@ const angleElem = document.getElementById("expand_less")
     // Show the expand more image
     //angleImages.style.display = "block";
 });
+

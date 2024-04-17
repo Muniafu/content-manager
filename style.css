@@ -129,14 +129,29 @@ header{
   width: 15px;
  }
 
+ #angle-one{
+  background-color: #3d3d3d;
+  border-radius: 15px;
+  margin-top: 3px ;
+  width: 15px;
+ }
+
+ .rotate180 {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease; 
+ }
+
  .titled{
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
  }
 
+ #expand_less{
+  margin-left: 20px;
+ }
 
 
  .ellipse-img{
@@ -156,7 +171,6 @@ ul li ul.dropdown li {
 }
 
 ul li ul.dropdown {
-  width: max-content;
   background-color: #3d3d3d;
   border: 1px solid;
   border-color: #ffd150;
