@@ -11,6 +11,16 @@ toggleBtnIcon.classList  = isOpen
 : 'fa-solid fa-bars'
 }
 
+const sLink = document.querySelector(".s_link")
+
+sLink.addEventListener ("click", () => {
+  if (sLink.style.display === "none" || sLink.style.display === "") {
+    sLink.style.display = "block";
+} else {
+  //sLink.style.display = "none";
+}
+})
+
 /*const backToTopBtn = document.getElementById("backToTopBtn");
 
 window.addEventListener("scroll", () => {
