@@ -83,6 +83,7 @@ header{
   justify-content: center;
   align-items: center;
   padding: 5px 10px 5px 10px;
+  height: 40px;
 }
 
 
@@ -142,7 +143,7 @@ header{
  }
 
  .titled{
-  font-size: 10px;
+  font-size: 13px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -161,34 +162,53 @@ header{
 
  /* DROPDOWN */
 
- .dropdown{
-  margin-top:100px ;
- }
-
-ul li ul.dropdown li {
-  display: block;
-  border-color: #ffd150;
-}
-
-ul li ul.dropdown {
-  background-color: #3d3d3d;
+.dropdown {
+  visibility: hidden; 
+  position: absolute;
+  z-index: 99;
+  opacity: 0; 
+  width: max-content;
   border: 1px solid;
   border-color: #ffd150;
-  border-radius: 10px;
-  position: absolute;                          
-  z-index: 999;
-  display: none;
-  padding-left: 10px;
-  /*transition-delay: 500ms;*/
+  border-radius: 15px;
+  background-color: #3d3d3d;
+  padding: 0px;
+  transition: visibility 0s linear 0s , opacity 0.2s ease-in-out; 
 }
 
-hr{
-  color: black;
-  background-color: black;
+.links > li {
+  position: relative;
+}
+
+
+.links > li:hover .dropdown {
+  visibility: visible; 
+  opacity: 1; 
+  transition: opacity 0.5s ease-in-out, visibility 0s linear 0s;
+  top: 100%;
+  left: 0%;
+  width: max-content;
+  padding: 10px;
+}
+
+
+
+ul li ul.dropdown li:hover {
+  background-color: #3d3d3d;
+}
+
+ul li ul.dropdown li.dw-li {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding-left: 10px;
+  padding-top: 5px;
+  border: 1px solid;
+  border-color: #212121;
 }
 
 /* DROPDOWN MENU */
-.dropdown_menu{
+/*.dropdown_menu{
   display: none;
   position: absolute;
   right: 2rem;
@@ -203,22 +223,104 @@ hr{
 }
 
 .dropdown_menu.open{
-  height: 260px;
+  height: 768px;
+}*/
+
+/* Code that should be display when the hamburger menu is clicked on a mobile screen size */
+
+.dropdown_menu {
+ display: block;
+ opacity: 0;
+  position: absolute;
+  border: 1px solid #ffd150;
+  border-radius: 15px ;
+  background-color: #212121;
+  top: 100%;
+  left: 10%;
+  width: 80%;
+  border-radius: 15px;
+}
+
+.dropdown_menu.open{
+  opacity: 1;
+ height: fit-content;
+}
+
+.btn_t{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta_btn_t {
+  padding: 10px 20px;
+      width: 200px;
+      margin: 20px;
+      border-radius: 12px;
+      font-weight: bold;
+      border: none;
+      background-color: #ffd150;
+
+      
 }
 
 
-.dropdown_menu li{
+
+.nav_links_t{
+  position: relative;
+}
+
+.dropdown_t {
+  /*visibility: hidden;*/
+  display: none; 
+  position: relative;
+  z-index: 99;
+  opacity: 0; 
+  width: max-content;
+  border: 1px solid;
+  border-color: #ffd150;
+  border-radius: 15px;
+  background-color: #3d3d3d;
+  padding: 0px;
+  transition: visibility 0s linear 0s , opacity 0.2s ease-in-out; 
+}
+
+.s_link{
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nav_links_t > li:hover {
+  color: #ffd150;
+}
+
+.nav_links_t > li:hover  .dropdown_t {
+  /*visibility: visible; */
+  display: block;
+  opacity: 1; 
+  transition: opacity 0.5s ease-in-out, visibility 0s linear 0s;
+  /*top: 100%;
+  left: 0%;
+  width: max-content;*/
+  width: 80%;
+  padding: 10px;
+}
+
+/*.dropdown_menu li{
   padding: 0.7rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  
 }
 
 .dropdown_menu .action_btn{
   width: 100%;
   display: flex;
   justify-content: center;
-}
+} */
+
 /* RESPONSIVE DESIGN */
 @media(max-width: 992px){
   .navbar .links,
@@ -230,16 +332,16 @@ hr{
       display: block;
   }
 
-  .dropdown_menu{
+  /*.dropdown_menu{
       display: block;
   }
 }
 
-@media(max-width: 576px) {
+/*@media(max-width: 576px) {
   .dropdown_menu{
       left: 2rem;
       width: unset;
-  }
+  }*/
 }
 
 
@@ -589,7 +691,7 @@ height: auto;
   }
 
 .card-container {
-  padding-top: 250px;
+  padding-top: 150px;
   margin-top: 30px;
   margin-bottom: 80px;
   color: whitesmoke;
@@ -607,12 +709,12 @@ height: auto;
 .card-container .image-icons {
   z-index: 10;
   position: absolute;
-  top: -180px;
+  top: -150px;
 }
 
 .oscar {
   text-align: center;
-  margin-top: 140px;
+  margin-top: 75px;
 }
 
 .descriptor {
@@ -655,7 +757,8 @@ height: auto;
 
 @media (max-width: 768px){
   .final-btns{
-    display: block;
+    display: flex;
+    flex-direction:column;
   }
 
 }
@@ -666,21 +769,21 @@ width: 100%;
 
 @media(max-width: 450px){
   #btn-sl{
-    margin: 5px;
-   width: 150px;
+    margin: 10px;
+   width: 200px;
    padding: 10px;
-   font-size: 15px;
+   font-size: 10px;
   }
   #btn-l{
-    margin: 5px;
-    width: 150px;
+    margin: 10px;
+    width: 200px;
     padding: 10px;
-   font-size: 15px;
+   font-size: 10px;
   }
 }
 @media (max-width: 768px){
 .final-btns{
-  width: 150px;
+  width: 100%;
 }
 
 }
@@ -715,38 +818,63 @@ width: 100%;
   margin-right: 20px;
 }
 
+/*  FOOTER STYLING */
 
 footer {
-  background-color: #3d3d3d;
+  background-color: #212121;
   color: whitesmoke;
-  padding: 40px;
+  padding: 60px 0;
+}
+
+h5{
+color: #ffd150;
 }
 
 /* Footer styles */
+.footer-items{
+display: flex;
+}
+
+
 .footer-wrapper {
   display: flex;
+  justify-content: space-evenly;
+  
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin: 0px 50px 0px 50px;
 }
 
 .sign-off {
   gap: 20px;
+  max-width: 350px;
 }
 
 .socials {
-  gap: 15px;
+  gap: 20px;
   color: whitesmoke;
+  margin-top: 50px;
 }
 
-.footer-wrapper > div {
+.copyright-call{
+  margin-top: 20px;
+}
+
+.footer-logo{
+  width: 150px;
+}
+/*.footer-wrapper > div {
   flex: 1 1 200px; 
   margin-right: 20px; 
-}
+}*/
 
 .footer-wrapper div p a { 
   color: whitesmoke;
   text-decoration: none;
   font-size: 14px;
+}
+
+.footer-wrapper .item p a:hover{
+  color: #ffd150;
 }
 
 /* Responsive styles */
@@ -763,6 +891,10 @@ footer {
   }
 }
 
+
+
+
+/* STYLING FOR RESPONSIVENESS */
 .hero-block-one > * {
   flex: 1 1 80%; 
   max-width: 55%;
