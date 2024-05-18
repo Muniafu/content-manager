@@ -89,7 +89,7 @@ header{
 
 .navbar .links{
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .navbar .toggle_btn{
@@ -229,16 +229,21 @@ ul li ul.dropdown li.dw-li {
 /* Code that should be display when the hamburger menu is clicked on a mobile screen size */
 
 .dropdown_menu {
- display: block;
- opacity: 0;
+  display: none;
+  margin: 0;
   position: absolute;
   border: 1px solid #ffd150;
-  border-radius: 15px ;
-  background-color: #212121;
-  top: 100%;
-  left: 10%;
-  width: 80%;
-  border-radius: 15px;
+  color: #212529;
+  z-index: 1000;
+  text-align: left;
+  font-size: 1rem;
+  border-radius: .25rem;
+  background-clip: padding-box;
+  list-style-position: initial;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-10px);
 }
 
 .dropdown_menu.open{
@@ -268,21 +273,28 @@ ul li ul.dropdown li.dw-li {
 
 .nav_links_t{
   position: relative;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-10px);
 }
 
 .dropdown_t {
   /*visibility: hidden;*/
   display: none; 
-  position: relative;
-  z-index: 99;
+  position: static;
+  z-index: 1000;
   opacity: 0; 
   width: max-content;
   border: 1px solid;
   border-color: #ffd150;
   border-radius: 15px;
-  background-color: #3d3d3d;
+  background-color: #3D3D3D;
   padding: 0px;
-  transition: visibility 0s linear 0s , opacity 0.2s ease-in-out; 
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-10px);
 }
 
 .s_link{
@@ -290,20 +302,28 @@ ul li ul.dropdown li.dw-li {
   font-family: "Montserrat", sans-serif;
   padding: 10px;
   cursor: pointer;
+  background-color: #3D3D3D;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-10px);
 }
 
 .nav_links_t > li:hover {
   color: #ffd150;
+  background-color: #3D3D3D;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(0);
 }
 
 .nav_links_t > li:hover  .dropdown_t {
   /*visibility: visible; */
   display: block;
   opacity: 1; 
-  transition: opacity 0.5s ease-in-out, visibility 0s linear 0s;
-  /*top: 100%;
-  left: 0%;
-  width: max-content;*/
+  transition: opacity 0.1s ease-in-out, visibility 0s linear 0s;
+  background-color: #3D3D3D;
   width: 80%;
   padding: 10px;
 }
@@ -798,7 +818,7 @@ width: 100%;
   border-radius: 50%;
   margin: 0 30px;
   font-size: 20px;
-  color: whitesmoke;
+  color: #f5f5f5;
   border: none;
   cursor: pointer;
 }
@@ -822,7 +842,7 @@ width: 100%;
 
 footer {
   background-color: #212121;
-  color: whitesmoke;
+  color: #f5f5f5;
   padding: 60px 0;
 }
 
@@ -851,7 +871,7 @@ display: flex;
 
 .socials {
   gap: 20px;
-  color: whitesmoke;
+  color: #f5f5f5;
   margin-top: 50px;
 }
 
